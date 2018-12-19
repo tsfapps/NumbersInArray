@@ -16,8 +16,6 @@ public class GivenNumber {
      
      int n;
      int count = 0;
-     int num = 0;
-     int flag = 0;
       for(int i = 0; i<mat.length; i++)
       {
           int x = mat[i];
@@ -25,19 +23,18 @@ public class GivenNumber {
           n = x%10;
           if(n == 5){
           count = count + 1;
-        
          }
             x = x/10;
-            
       }
-  
       }
         System.out.println(count);
 }
     public static void main(String[] args) {
        
-        int arr[] = {25, 57, 54, 55, 85, 95, 93, 29, 53, 5564, 6554, 986555543};
+        int arr[] = {25, 57, 54, 55, 85, 95, 93, 29, 53, 5564, 6554, 98555};
         particulaNumber(arr);
     }
     
 }
+
+/*in this case output is : 15*/
