@@ -13,7 +13,7 @@ public class GivenNumber {
 
    public static void particulaNumber(int mat[]) 
 	{ 
-      
+     
      int n;
      int count = 0;
      int num = 0;
@@ -21,22 +21,22 @@ public class GivenNumber {
       for(int i = 0; i<mat.length; i++)
       {
           int x = mat[i];
-     while(x < 0){
-          n = mat[i]%10;
+     while(x > 0){
+          n = x%10;
           if(n == 5){
           count = count + 1;
-          flag = count;
+        
          }
             x = x/10;
-             num = num + flag;
+            
       }
-   System.out.println(num);
+  
       }
-       
+        System.out.println(count);
 }
     public static void main(String[] args) {
        
-        int arr[] = {25, 57, 54, 55, 85, 98, 93, 29, 53};
+        int arr[] = {25, 57, 54, 55, 85, 95, 93, 29, 53, 5564, 6554, 986555543};
         particulaNumber(arr);
     }
     
